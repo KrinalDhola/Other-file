@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Table Responsive</title>
+<style>
+.order_table table {border-collapse:collapse;}
+.order_table thead td{font-weight:600; padding:8px 10px;}
+@media only screen and (max-width:991px), {
+.order_table table {width:100%;}
+.order_table table tr, .order_table table tr td, .order_table table thead tr, .order_table table thead tr td{display:block;}
+.order_table .table tbody tr td{padding: 8px 15px;}
+.order_table thead tr { 
+ position: absolute;
+ top: -9999px;
+ left: -9999px;
+}
+.order_table .table tbody  tr{margin-bottom:15px;}
+.order_table .table tbody  tr td {
+border: none;
+ border-bottom: 1px solid #000;
+ position: relative;
+ padding-left: 50%;
+}
+ .order_table td:before{
+ position: absolute;
+ top: 6px;
+ left: 6px;
+ width: 45%;
+ padding-right: 10px;
+ white-space: nowrap;
+}
+.order_table td:nth-of-type(1):before {
+content: "Product Name";
+padding: 0px 0px 0px 10px;
+font-size: 16px;    color: #f59221;
+    font-weight: 500;
+}
+ .order_table td:nth-of-type(2):before {
+content: "Protection For";
+padding: 0px 0px 0px 10px;
+font-size: 16px;    color: #f59221;
+    font-weight: 500;
+}
+ .order_table td:nth-of-type(3):before {
+content: "Printing";
+padding: 0px 0px 0px 10px;
+font-size: 16px;    color: #f59221;
+    font-weight: 500;
+}
+ .order_table td:nth-of-type(4):before {
+content: "Lamination";
+padding: 0px 0px 0px 10px;
+font-size: 16px;    color: #f59221;
+    font-weight: 500;
+}
+ .order_table td:nth-of-type(5):before {
+content: "Period";
+padding: 0px 0px 0px 10px;
+font-size: 16px;    color: #f59221;
+    font-weight: 500;
+}
+ .order_table td:nth-of-type(6):before {
+content: "Oiling";
+padding: 0px 0px 0px 10px;
+font-size: 16px;    color: #f59221;
+    font-weight: 500;
+}
+	}
+</style>
+</head>
+
+<body>
+<div class="order_table">
+                        <table class="table" border="">
+                          <thead>
+                            <tr>
+                              <td class="width1"><div class="divb_16">Product Name</div></td>
+                              <td class="width2" align=""><div class="divb_16">Protection For</div></td>
+                              <td class="width3" align=""><div class="divb_16">Printing</div></td>
+                              <td class="width4" align=""><div class="divb_16">Lamination</div></td>
+                              <td class="width5" align=""><div class="divb_16">Period</div></td>
+                              <td class="width6" align=""><div class="divb_16">Oiling</div></td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><div class="color_blue">VCI Paper 602</div></td>
+                              <td class="text_align">Ferrous & Aluminum</td>
+                              <td class="text_align">Red</td>
+                              <td class="text_align">Unlaminated</td>
+                              <td class="text_align">6-12 mnths</td>
+                              <td class="text_align">VCI</td>
+                            </tr>
+                            <tr>
+                              <td><div class="color_blue">VCI Paper 603</div></td>
+                              <td class="text_align">Ferrous & Aluminum</td>
+                              <td class="text_align">Red </td>
+                              <td class="text_align">Laminated</td>
+                              <td class="text_align">2 year</td>
+                              <td class="text_align">VCI </td>
+                            </tr>
+                            <tr>
+                              <td><div class="color_blue">VCI Paper 604 </div></td>
+                              <td class="text_align">Cu,Brass,Bronze,Tin,Solder & other multimetal systems</td>
+                              <td class="text_align">Blue</td>
+                              <td class="text_align">Unlaminated</td>
+                              <td class="text_align">6-12 mnths </td>
+                              <td class="text_align">VCI</td>
+                            </tr>
+                            <tr>
+                              <td><div class="color_blue">VCI Paper 605</div></td>
+                              <td class="text_align">Cu,Brass,Bronze,Tin,Solder & other multimetal systems</td>
+                              <td class="text_align">Blue</td>
+                              <td class="text_align">Laminated</td>
+                              <td class="text_align">2 years </td>
+                              <td class="text_align">VCI</td>
+                            </tr>
+                            <tr>
+                              <td><div class="color_blue">VCI Paper 606-Long Life</div></td>
+                              <td class="text_align">Steel products for a longer protection period</td>
+                              <td class="text_align">Green</td>
+                              <td class="text_align">Unlaminated</td>
+                              <td class="text_align">2 years</td>
+                              <td class="text_align">Preferred </td>
+                            </tr>
+                            <tr>
+                              <td><div class="color_blue">VCI Paper 607-Long Life</div></td>
+                              <td class="text_align">Steel products for a longer protection period</td>
+                              <td class="text_align">Green </td>
+                              <td class="text_align">Laminated</td>
+                              <td class="text_align">5 years</td>
+                              <td class="text_align">Preferred</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+</body>
+</html>

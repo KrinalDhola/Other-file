@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+  #hover_box {  
+   display:none; 
+  }
+</style>
+</head>
+
+<body>
+<table>
+  <tr onMouseOver="show_tooltipbox('hover_box')" onMouseOut="hide_tooltipbox('hover_box')">
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+</table>
+<div > krina</div>
+<div id="hover_box">Div 1 Content</div>
+
+
+<script type="text/javascript">
+function show_tooltipbox(id) {
+document.getElementById(id).style.display = "block";
+}
+ function hide_tooltipbox(id) {
+document.getElementById(id).style.display = "none";
+ }
+ 
+</script>
+</body>
+</html>
